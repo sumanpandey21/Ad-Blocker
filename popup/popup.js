@@ -135,7 +135,7 @@ document.querySelector("#options-button")?.addEventListener("click", () => {
 
 document.querySelector("#report-link")?.addEventListener("click", (e) => {
   e.preventDefault()
-  chrome.tabs.create({ url: "https://github.com/issues" })
+  chrome.tabs.create({ url: "https://github.com/sumanpandey21/Ad-Blocker/issues" })
 })
 
 load()
