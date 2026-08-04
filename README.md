@@ -1,4 +1,4 @@
-# 🛡️ ClearBrowse — Ad Blocker Chrome Extension
+# ClearBrowse — Ad Blocker Chrome Extension
 
 A lightweight, privacy-focused Manifest V3 Chrome extension that blocks ads, trackers, and intrusive popups across the web — including YouTube.
 
@@ -8,7 +8,7 @@ A lightweight, privacy-focused Manifest V3 Chrome extension that blocks ads, tra
 
 ---
 
-## ✨ Features
+## Features
 
 - **Ad Blocking** — Blocks requests to 30+ major ad networks (Google Ads, DoubleClick, Taboola, Criteo, etc.)
 - **Tracker Blocking** — Stops analytics and tracking scripts (Google Analytics, Facebook Pixel, Hotjar, Mixpanel, etc.)
@@ -21,7 +21,7 @@ A lightweight, privacy-focused Manifest V3 Chrome extension that blocks ads, tra
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### From Source (Developer Mode)
 
@@ -43,7 +43,7 @@ A lightweight, privacy-focused Manifest V3 Chrome extension that blocks ads, tra
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Ad-Blocker/
@@ -103,7 +103,7 @@ When you whitelist a site:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how:
 
@@ -122,13 +122,7 @@ Found a site where ads still show? Please [open an issue](https://github.com/sum
 
 ---
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Built with Chrome's [Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/) APIs
 - Inspired by the open-source ad-blocking community
@@ -136,5 +130,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/sumanpandey21">Suman Pandey</a>
+  Made with by <a href="https://github.com/sumanpandey21">Suman Pandey</a>
 </p>
