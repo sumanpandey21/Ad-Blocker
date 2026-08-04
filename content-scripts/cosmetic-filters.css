@@ -1,0 +1,21 @@
+/* Conservative selectors: avoid broad patterns that could hide normal content. */
+.ad-container,
+.ad-banner,
+.banner-ad,
+.advertisement,
+.advertisement-container,
+.adsbygoogle,
+.google-auto-placed,
+#ad-slot,
+#ad-container,
+#advertisement,
+[data-ad-slot],
+[data-ad-client],
+[data-ad-container],
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+.modal-ad,
+.ad-popup,
+.popup-ad {
+  display: none !important;
+}

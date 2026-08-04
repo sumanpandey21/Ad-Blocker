@@ -1,0 +1,6 @@
+[
+  { "id": 101, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||youtube.com/pagead/", "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"] } },
+  { "id": 102, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||youtube.com/ptracking", "resourceTypes": ["image", "xmlhttprequest"] } },
+  { "id": 103, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||youtube.com/api/stats/ads", "resourceTypes": ["xmlhttprequest"] } },
+  { "id": 104, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||googlevideo.com/pagead/", "resourceTypes": ["script", "image", "xmlhttprequest"] } }
+]

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClearBrowse — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="layout-wrapper">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h1>ClearBrowse Settings</h1>
+          <p>Local ad-blocking, privacy controls & site permissions</p>
+        </div>
+      </div>
+      <div class="version-badge">
+        <span class="status-dot"></span>
+        <span>Version 1.0.0</span>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs Bar -->
+    <nav class="nav-tabs">
+      <button type="button" class="tab-btn active" data-tab="protection">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <span>Protection</span>
+      </button>
+      
+      <button type="button" class="tab-btn" data-tab="whitelist">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        <span>Whitelist</span>
+      </button>
+
+      <button type="button" class="tab-btn" data-tab="statistics">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10"/>
+          <line x1="12" y1="20" x2="12" y2="4"/>
+          <line x1="6" y1="20" x2="6" y2="14"/>
+        </svg>
+        <span>Statistics</span>
+      </button>
+
+      <button type="button" class="tab-btn" data-tab="advanced">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+        <span>Rulesets</span>
+      </button>
+
+      <button type="button" class="tab-btn" data-tab="about">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="16" x2="12" y2="12"/>
+          <line x1="12" y1="8" x2="12.01" y2="8"/>
+        </svg>
+        <span>About</span>
+      </button>
+    </nav>
+
+    <!-- Tab Panels Container -->
+    <main class="content-panels">
+      <!-- 1. Protection Panel -->
+      <section id="panel-protection" class="tab-panel active">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <div>
+              <h2>Global Protection Rules</h2>
+              <p>Customize which components and rule categories are actively blocked.</p>
+            </div>
+          </div>
+
+          <div class="settings-list">
+            <!-- Master Enable Switch -->
+            <div class="setting-item featured">
+              <div class="setting-info">
+                <div class="setting-title-row">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                  <h3>Enable Extension Protection</h3>
+                </div>
+                <p>Master toggle for network request filtering and cosmetic DOM elements removal across all sites.</p>
+              </div>
+              <label class="toggle-switch">
+                <input id="enabled" type="checkbox" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- General Web Ads -->
+            <div class="setting-item">
+              <div class="setting-info">
+                <h3>Block General Web Ads</h3>
+                <p>Filter out banners, sidebars, ad containers, and popups using declarative net request rules.</p>
+              </div>
+              <label class="toggle-switch">
+                <input id="blockGeneral" type="checkbox" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- YouTube Ads -->
+            <div class="setting-item">
+              <div class="setting-info">
+                <h3>Block YouTube Video & Banner Ads</h3>
+                <p>Auto-skip pre-roll/mid-roll video ads cleanly and remove promotional sidebar banners.</p>
+              </div>
+              <label class="toggle-switch">
+                <input id="blockYouTube" type="checkbox" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- Popups -->
+            <div class="setting-item">
+              <div class="setting-info">
+                <h3>Block Popup Modals</h3>
+                <p>Prevent intrusive promotional overlays and popups from intercepting your browsing session.</p>
+              </div>
+              <label class="toggle-switch">
+                <input id="blockPopups" type="checkbox" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- Tracking Scripts -->
+            <div class="setting-item">
+              <div class="setting-info">
+                <h3>Block Analytics & Tracking Scripts</h3>
+                <p>Block known telemetry endpoints, third-party analytics scripts, and user behavior trackers.</p>
+              </div>
+              <label class="toggle-switch">
+                <input id="blockTracking" type="checkbox" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Whitelist Panel -->
+      <section id="panel-whitelist" class="tab-panel">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <div>
+              <h2>Whitelist Manager</h2>
+              <p>Whitelisted domains bypass all network filtering and cosmetic rules.</p>
+            </div>
+          </div>
+
+          <form id="whitelist-form" class="whitelist-form">
+            <div class="input-group">
+              <svg class="input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <input id="domain" type="text" placeholder="example.com" autocomplete="off" spellcheck="false" />
+            </div>
+            <button type="submit" class="btn-primary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+              <span>Add Site</span>
+            </button>
+          </form>
+
+          <ul id="whitelist" class="whitelist-list"></ul>
+        </div>
+      </section>
+
+      <!-- 3. Statistics Panel -->
+      <section id="panel-statistics" class="tab-panel">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <div>
+              <h2>Blocking Metrics & Analytics</h2>
+              <p>Overview of network requests and DOM elements neutralized since installation.</p>
+            </div>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card hero">
+              <div class="metric-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="metric-data">
+                <span class="metric-title">Total Blocked Requests</span>
+                <p id="stats-summary" class="metric-value">Total blocked: 0</p>
+                <span class="metric-desc">Lifetime ad & tracker requests prevented</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="danger-zone">
+            <div>
+              <h3>Reset Counter Statistics</h3>
+              <p>Clear all local blocking statistics and tab performance counters back to zero.</p>
+            </div>
+            <button id="reset-stats" class="btn-danger" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6h18"/>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+              </svg>
+              <span>Reset Statistics</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Advanced Rulesets Panel -->
+      <section id="panel-advanced" class="tab-panel">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <div>
+              <h2>Declarative Net Request Engine</h2>
+              <p>Manifest V3 static and dynamic ruleset status.</p>
+            </div>
+          </div>
+
+          <div class="rulesets-list">
+            <div class="ruleset-row">
+              <div class="ruleset-badge active">
+                <span class="indicator"></span>
+                <span>ad_rules</span>
+              </div>
+              <div class="ruleset-info">
+                <strong>General Ad Ruleset</strong>
+                <p>35 declarative network rules matching major ad networks & adserver domains.</p>
+              </div>
+              <span class="ruleset-priority">Priority: 1</span>
+            </div>
+
+            <div class="ruleset-row">
+              <div class="ruleset-badge active">
+                <span class="indicator"></span>
+                <span>tracking_rules</span>
+              </div>
+              <div class="ruleset-info">
+                <strong>Tracking & Analytics Ruleset</strong>
+                <p>9 rules matching telemetry beacons, Hotjar, Google Analytics, and pixels.</p>
+              </div>
+              <span class="ruleset-priority">Priority: 1</span>
+            </div>
+
+            <div class="ruleset-row">
+              <div class="ruleset-badge active">
+                <span class="indicator"></span>
+                <span>youtube_rules</span>
+              </div>
+              <div class="ruleset-info">
+                <strong>YouTube Ad Ruleset</strong>
+                <p>4 rules blocking YouTube pagead and ptracking endpoints.</p>
+              </div>
+              <span class="ruleset-priority">Priority: 1</span>
+            </div>
+
+            <div class="ruleset-row">
+              <div class="ruleset-badge dynamic">
+                <span class="indicator"></span>
+                <span>dynamic_allow_rules</span>
+              </div>
+              <div class="ruleset-info">
+                <strong>Dynamic Whitelist Allow Rules</strong>
+                <p>Higher-priority (Priority 100) allow rules overriding blocks for whitelisted domains.</p>
+              </div>
+              <span class="ruleset-priority">Priority: 100</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. About Panel -->
+      <section id="panel-about" class="tab-panel">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <div>
+              <h2>About ClearBrowse</h2>
+              <p>Privacy-focused Manifest V3 Chrome Extension.</p>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-feature">
+              <div class="about-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Lightweight & Fast</strong>
+                <p>Built with native Declarative Net Request for minimal CPU & RAM overhead.</p>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="about-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Zero Telemetry</strong>
+                <p>All settings and count statistics stay local on your browser instance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" role="status" class="toast-container">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    <span id="toast-message">Settings saved</span>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
