@@ -67,7 +67,7 @@ Ad-Blocker/
 
 ---
 
-## 🔧 How It Works
+## How It Works
 
 ClearBrowse uses Chrome's **Declarative Net Request (DNR)** API to block ad and tracker requests at the network level — before they even load. This is more efficient and privacy-respecting than older approaches.
 
@@ -89,7 +89,7 @@ When you whitelist a site:
 
 ---
 
-## 🎛️ Usage
+## Usage
 
 1. **Click the ClearBrowse icon** in your Chrome toolbar
 2. **Toggle protection** on/off for the current site using the switch
