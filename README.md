@@ -2,10 +2,6 @@
 
 A lightweight, privacy-focused Manifest V3 Chrome extension that blocks ads, trackers, and intrusive popups across the web — including YouTube.
 
-![Chrome Extension](https://img.shields.io/badge/Platform-Chrome-4285F4?logo=googlechrome&logoColor=white)
-![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
 ---
 
 ## Features
