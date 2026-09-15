@@ -4,6 +4,7 @@ const DEFAULT_SETTINGS = {
   blockYouTube: true,
   blockPopups: true,
   blockTracking: true,
+  debugMode: false,
   whitelist: [],
 }
 
@@ -13,6 +14,7 @@ const SETTINGS_FIELDS = [
   "blockYouTube",
   "blockPopups",
   "blockTracking",
+  "debugMode",
 ]
 
 const toast = document.querySelector("#toast")

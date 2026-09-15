@@ -4,6 +4,7 @@ const DEFAULT_SETTINGS = {
   blockYouTube: true,
   blockPopups: true,
   blockTracking: true,
+  debugMode: false,
   whitelist: [],
 }
 
